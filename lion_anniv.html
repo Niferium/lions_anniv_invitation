@@ -136,10 +136,8 @@
         }
 
         .crown-icon {
-            font-size: 4rem;
-            color: #d4af37;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-            margin-bottom: 1rem;
+            float: left;
+            width: 33.33%;
         }
 
         @keyframes float {
@@ -211,7 +209,16 @@
         }
 
         .detail-item {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            color: #f8f8ff;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .detail-item-filipiniana {
+            font-size: 1.7rem;
             color: #f8f8ff;
             margin: 1rem 0;
             display: flex;
@@ -343,6 +350,13 @@
             display: block;
             margin: 0 auto;
         }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            margin-bottom: 3%;
+        }
     </style>
 </head>
 <body>
@@ -376,9 +390,15 @@
     <div class="sparkle"></div>
 
     <div class="container">
-        <div class="crown-icon"><img src="lions_qc.jpeg" alt="icon" class="centered-image"></div>
+        <div class="row">
+            <div class="crown-icon"><img src="lion_logo.jpg" alt="icon" class="centered-image"></div>
+            <div class="crown-icon"><img src="lions_qc.jpeg" alt="icon" class="centered-image"></div>
+            <div class="crown-icon"><img src="lion_logo2.jpg" alt="icon" class="centered-image"></div>
+        </div>
         
-        <h2 class="title">32nd Anniversary Quezon City Bahaghari Executive Lions Club</h2>
+        
+        <h2 class="title">32nd Anniversary</h2>
+        <h2 class="title">Quezon City Bahaghari Executive Lions Club</h2>
         <h3 class="subtitle">Celebrating 32 Years of Colorful Service and Leadership”</h3>
         
         <div class="invitation-text">
@@ -401,18 +421,17 @@
             <div class="details">
                 <div class="detail-item">
                     <span class="detail-icon">📅</span>
-                    <span>Friday, September 12, 2025, at 4:00 pm onwards</span>
+                    <span>Friday, September 12, 2025, at 6:00 pm onwards</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon">🏰</span>
                     <span>2nd Floor, Executive Lounge, SSS Main Building, East Avenue, Quezon City </span>
                 </div>
-                <div class="detail-item">
-                    <span class="detail-icon">👔</span>
-                    <span>Filipiniana</span>
+                <div class="detail-item-filipiniana">
+                    <span class="detail-icon">🇵🇭</span>
+                    <span>Filipiniana Attire</span>
                 </div>
                 <br>
-                <
                 <div class="detail-item">
                     <span style="font-size: 28px;">“The deadline for registration is on or before August 30, 2025.”</span>
                 </div>
@@ -426,8 +445,9 @@
         </div>
         
         <p class="footer-text">
-            "A Legacy of Light and Service: 32nd Anniversary Celebration"
+            "We Serve"
         </p>
+        
     </div>
 
     <script>
